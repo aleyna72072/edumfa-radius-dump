@@ -42,6 +42,7 @@ services:
   edumfa-radius:
     build: ../..
     restart: always
+    read_only: true
     network_mode: host
     # If you want to use bridge instead, make sure to set your clients.conf
     # correctly and expose the port:
